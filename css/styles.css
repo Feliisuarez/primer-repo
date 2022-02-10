@@ -87,6 +87,19 @@
   font-size: 4em;
   color: #9c0f48;
   text-shadow: 0 0.2em 0.1em #000;
+  animation: title 0.5s linear normal;
+}
+
+@keyframes title {
+  0% {
+    text-shadow: 0 0em 0em #000;
+    transform: translateY(0.2em);
+  }
+
+  100% {
+    text-shadow: 0 0.2em 0.1em #000;
+    transform: translateY(0);
+  }
 }
 
 .menu-icon {
@@ -507,6 +520,38 @@ td {
 
   .subtitle-index {
     margin: 1em 20%;
+  }
+
+  .subtitle:hover {
+    animation: subtitle 0.2s linear normal;
+  }
+
+  @keyframes subtitle {
+    0% {
+      transform: translateX(0.1em);
+    }
+
+    25% {
+      transform: translateX(-0.1em);
+    }
+
+    50% {
+      transform: translateX(0.1em);
+    }
+
+    75% {
+      transform: translateX(-0.1em);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /*footer*/
+
+  .footer-info:hover {
+    text-shadow: 0 0 1em #fff;
   }
 
   /*index*/

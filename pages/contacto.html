@@ -100,6 +100,7 @@
           <div>
             <label for="nombre">Nombre:</label>
             <input
+              required
               class="input"
               type="text"
               placeholder="Escriba su nombre"
@@ -109,6 +110,7 @@
           <div>
             <label for="apellido">Apellido:</label>
             <input
+              required
               class="input"
               type="text"
               placeholder="Escriba su apellido"
@@ -119,13 +121,19 @@
         <div class="mail-box">
           <label for="email">Correo electronico</label>
           <input
+            required
             class="input"
             type="email"
             placeholder="Escriba su correo"
             id="email"
           />
         </div>
-        <textarea class="text-area input" cols="30" rows="10"></textarea>
+        <textarea
+          class="text-area input"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
         <div class="button-box">
           <button class="button" type="reset">
             <i class="bx bxs-trash bx-sm"></i>
