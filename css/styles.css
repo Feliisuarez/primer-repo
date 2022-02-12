@@ -178,6 +178,7 @@ ul li a {
   margin-top: 10vh;
   padding-top: 10vh;
   height: 20vh;
+  position: relative;
 }
 
 .home {
@@ -280,6 +281,62 @@ ul li a {
 }
 
 /*index*/
+
+.menu-circle {
+  position: absolute;
+  overflow: hidden;
+  left: 1.5em;
+  color: transparent;
+  background-color: transparent;
+  text-shadow: 0 0 0em #470d21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.1em;
+  animation: menu-circle 1.5s linear normal;
+}
+
+@keyframes menu-circle {
+  0% {
+    background-color: #470d21;
+    text-shadow: 0 0 2em #470d21, 0 0 2em #470d21, 0 0 2em #470d21,
+      0 0 2em #470d21;
+    transform: translateY(-250%);
+  }
+
+  20% {
+    transform: translateY(-150%);
+  }
+
+  25% {
+    transform: translateY(0%);
+  }
+
+  35% {
+    transform: translateY(-1em);
+  }
+
+  45% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    background-color: #470d21;
+    text-shadow: 0 0 2em #470d21, 0 0 2em #470d21, 0 0 2em #470d21,
+      0 0 2em #470d21;
+    transform: translateY(0%);
+  }
+
+  75% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: transparent;
+    text-shadow: 0 0 0em #470d21;
+  }
+}
 
 .info-flex {
   display: flex;
@@ -448,6 +505,13 @@ td {
   padding: 0 3em;
 }
 
+@media screen and (max-width: 300px) {
+  .ubication-box {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 1100px) {
   /*header*/
 
@@ -478,7 +542,7 @@ td {
     position: fixed;
     z-index: 200;
     top: 3.5vh;
-    right: 0;
+    right: 2em;
     margin: 0;
   }
 
