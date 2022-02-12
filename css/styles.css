@@ -105,42 +105,28 @@
 .menu-icon {
   color: #fff;
   position: fixed;
-  top: 3.5vh;
-  right: 0.5em;
+  right: 0;
+  height: 12vh;
   z-index: 300;
 }
 
-.menu-burger {
-  width: 50%;
-  height: 90vh;
-  background-color: #f9e4d4;
-  position: fixed;
-  top: 12vh;
-  right: 0;
-  z-index: 340;
-  display: flex;
-  justify-content: right;
-  box-shadow: -0.1em 0 1em #000;
-  transform: translateX(100%);
-  transition: transform 0.2s;
+.dropdown {
+  display: inline;
 }
 
-.open {
-  transform: translateX(0);
+.menu-burger {
+  background-color: #f9e4d4;
 }
 
 .menu-burger-box {
   background-color: #0002;
   text-align: center;
-  margin: 5em 0;
-  width: 45vw;
+  margin: 2em 0;
   padding: 0.2em 0;
-  border-bottom-left-radius: 1em;
-  border-top-left-radius: 1em;
 }
 
 .menu-burger-link {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .social-icon {
@@ -250,6 +236,7 @@ ul li a {
 .hr {
   width: 80%;
   margin: 0 10%;
+  color: #fff;
 }
 
 .copyright {
@@ -257,6 +244,7 @@ ul li a {
   text-align: center;
   padding: 1em;
   background-color: #0003;
+  margin: 0;
 }
 
 /*Main*/
@@ -361,7 +349,7 @@ ul li a {
   width: 100%;
 }
 
-.text-info {
+.text-home {
   margin: 0;
   font-size: 1.5em;
   text-align: center;
@@ -533,8 +521,7 @@ td {
     text-align: unset;
   }
 
-  .menu-burger,
-  .menu-icon {
+  .dropdown {
     display: none;
   }
 
