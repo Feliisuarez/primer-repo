@@ -359,11 +359,6 @@ ul li a {
   flex-wrap: wrap;
 }
 
-.info-container {
-  width: 90%;
-  margin: 1em 5%;
-}
-
 .img-bg {
   width: 100%;
   height: 90vh;
@@ -371,14 +366,51 @@ ul li a {
   object-fit: cover;
 }
 
+.info-container {
+  width: 90%;
+  margin: 1em 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-info {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0em;
+  background-color: inherit;
+  padding: 0.2em 2em;
+  border-bottom: 2px solid;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.more-info {
+  display: none;
+  pointer-events: none;
+}
+
 .img-info {
   width: 100%;
+  box-shadow: 0 0 2em;
+  transition: transform 0.2s;
 }
 
 .text-home {
-  margin: 0;
+  margin: -2em 0 0 0;
   font-size: 1.5em;
   text-align: center;
+  padding: 3em 1em 1em;
+}
+
+.text-style-1 {
+  background-color: #d67d3e;
+  color: #000;
+}
+
+.text-style-2 {
+  background-color: #470d21;
+  color: #fff;
 }
 
 /*products*/
@@ -419,8 +451,11 @@ td {
 
 .video-text {
   font-size: 1.5em;
-  margin: 1em 0 5em;
+  margin: -1em 0 2em;
+  padding: 2em 0 1em;
   line-height: 1.5;
+  background-color: #000;
+  color: #fff;
 }
 
 /*ubication*/
@@ -591,12 +626,12 @@ td {
   /*main*/
 
   .subtitle {
-    width: 60%;
-    margin: 2em 20% 1em;
+    width: 90%;
+    margin: 2em 5% 1em;
   }
 
   .subtitle-index {
-    margin: 1em 20%;
+    margin: 1em 5%;
   }
 
   .subtitle:hover {
@@ -641,9 +676,60 @@ td {
     flex-direction: row;
   }
 
+  .more-info {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    font-size: 2em;
+    color: inherit;
+    transition: color 0.2s;
+    animation: more-info 1s linear alternate infinite;
+  }
+
+  @keyframes more-info {
+    from {
+      color: inherit;
+    }
+
+    to {
+      color: transparent;
+    }
+  }
+
+  .title-info {
+    width: 90%;
+    margin: 0 5%;
+    background-color: transparent;
+    top: 1em;
+  }
+
+  .img-info {
+    transform: translateY(12em);
+  }
+
   .info-container {
-    width: 30%;
-    margin: 2em;
+    width: 40%;
+    margin: 2em 0;
+  }
+
+  .info-container:hover .img-info {
+    transform: translateY(0);
+  }
+
+  .info-container:hover .title-info {
+    color: transparent;
+    width: 60%;
+    margin: 0 20%;
+  }
+
+  .info-container:hover .more-info {
+    animation: none;
+    color: transparent;
+  }
+
+  .text-home {
+    height: 10em;
   }
 
   /*products*/
@@ -660,12 +746,13 @@ td {
   }
 
   .video {
-    width: 80%;
-    margin: 0 10%;
+    width: 90%;
+    margin: 0 5%;
   }
 
   .video-text {
-    margin: 1em 10% 5em;
+    margin: -1em 5% 5em;
+    padding: 2em 2em 1em;
   }
 
   /*ubication*/
@@ -684,15 +771,15 @@ td {
   }
 
   .map {
-    width: 80%;
-    margin: 0 10%;
+    width: 90%;
+    margin: 0 5%;
   }
 
   /*form*/
 
   .form {
-    width: 80%;
-    margin: 2em 10%;
+    width: 60%;
+    margin: 2em 20%;
   }
 
   .name-box {
