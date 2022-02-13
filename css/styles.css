@@ -104,6 +104,7 @@
 
 .menu-icon {
   color: #fff;
+  background-color: #000;
   position: fixed;
   right: 0;
   height: 12vh;
@@ -115,13 +116,13 @@
 }
 
 .menu-burger {
-  background-color: #f9e4d4;
+  background-color: #fff;
   box-shadow: -0.1em 0.5em 1em #000a;
   z-index: 90;
 }
 
 .menu-burger-box {
-  background-color: #0002;
+  background-color: #ddd;
   text-align: center;
   margin: 2em 0;
   padding: 0.2em 0;
@@ -290,6 +291,11 @@ ul li a {
 
 /*index*/
 
+.carousel-btn {
+  background-color: #9c0f48;
+  border-radius: 1em;
+}
+
 .menu-circle {
   position: absolute;
   overflow: hidden;
@@ -360,7 +366,7 @@ ul li a {
 
 .img-bg {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   margin: 0;
   object-fit: cover;
 }
