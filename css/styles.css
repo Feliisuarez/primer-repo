@@ -56,7 +56,7 @@
 /*header*/
 
 .header-title {
-  height: 12vh;
+  height: 13vh;
   background-color: #470d21;
   width: 100%;
   position: fixed;
@@ -116,6 +116,8 @@
 
 .menu-burger {
   background-color: #f9e4d4;
+  box-shadow: -0.1em 0.5em 1em #000a;
+  z-index: 90;
 }
 
 .menu-burger-box {
@@ -151,7 +153,7 @@ ul li a {
 
 .nav {
   position: sticky;
-  top: -19vh;
+  top: -14vh;
   z-index: 150;
   display: none;
 }
@@ -163,7 +165,7 @@ ul li a {
   align-items: center;
   margin-top: 10vh;
   padding-top: 10vh;
-  height: 20vh;
+  height: 10vh;
   position: relative;
 }
 
@@ -204,6 +206,24 @@ ul li a {
   top: 0.2em;
   color: #d67d3e;
   pointer-events: none;
+}
+
+.button-on {
+  animation: on-button 0.2s linear normal;
+  box-shadow: 0 0 0 #470d21;
+  transform: translateY(0.3em);
+}
+
+@keyframes on-button {
+  from {
+    box-shadow: 0 0.3em 0.1em #470d21;
+    transform: translateY(0em);
+  }
+
+  to {
+    box-shadow: 0 0 0 #470d21;
+    transform: translateY(0.3em);
+  }
 }
 
 /*Footer*/
@@ -438,7 +458,7 @@ td {
 .form {
   width: 100%;
   margin: 2em 0;
-  font-size: 2em;
+  font-size: 1.5em;
   background-color: #f9e4d4;
   padding: 1em;
   box-shadow: 0 0.5em 0.5em #0005;
