@@ -154,7 +154,7 @@ ul li a {
 
 .nav {
   position: sticky;
-  top: -14vh;
+  top: -19vh;
   z-index: 150;
   display: none;
 }
@@ -164,10 +164,10 @@ ul li a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
-  padding-top: 10vh;
+  margin-top: 20vh;
   height: 10vh;
   position: relative;
+  right: 1.5em;
 }
 
 .home {
@@ -230,6 +230,7 @@ ul li a {
 /*Footer*/
 
 .footer {
+  margin-top: 1rem;
   background-color: #470d21;
 }
 
@@ -283,6 +284,8 @@ ul li a {
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'   fill-rule='evenodd'%3E%3Cg fill='%23F9E4D4' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314    0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8. 486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: 10%;
+  box-shadow: 0 0 0 0 #000;
+  position: relative;
 }
 
 .subtitle-index {
@@ -299,7 +302,7 @@ ul li a {
 .menu-circle {
   position: absolute;
   overflow: hidden;
-  left: 1.5em;
+  left: 3em;
   color: transparent;
   background-color: transparent;
   text-shadow: 0 0 0em #470d21;
@@ -361,7 +364,7 @@ ul li a {
 
 .img-bg {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   margin: 0;
   object-fit: cover;
 }
@@ -421,12 +424,14 @@ ul li a {
   width: 100%;
   font-size: 1.5em;
   background-color: #fff;
-  border: 2px solid #d67d3e;
+  border: 2px solid #000;
   color: #000;
+  margin: 1em 0;
 }
 
 td {
   padding: 10px;
+  border: 1px solid #ddd;
 }
 
 /*about-us*/
@@ -438,6 +443,7 @@ td {
 .img-bacchus {
   width: 200px;
   float: left;
+  border-radius: 5em;
 }
 
 .about-us-text {
@@ -453,7 +459,7 @@ td {
 
 .video-text {
   font-size: 1.5em;
-  margin: -1em 0 2em;
+  margin: -1em 0 1em;
   padding: 2em 0 1em;
   line-height: 1.5;
   background-color: #000;
@@ -500,7 +506,7 @@ td {
 
 .form {
   width: 100%;
-  margin: 2em 0;
+  margin: 1em 0;
   font-size: 1.5em;
   background-color: #f9e4d4;
   padding: 1em;
@@ -514,7 +520,7 @@ td {
   background-color: #0002;
   border-radius: 0.5em;
   border: 1px solid #000;
-  margin: 1em 0;
+  margin: 1em 0.5em;
 }
 
 .name-box {
@@ -560,6 +566,12 @@ td {
   .ubication-box {
     width: 100%;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) and (orientation: landscape) {
+  .menu-burger-box {
+    margin: 0.5em 0;
   }
 }
 
@@ -629,36 +641,46 @@ td {
 
   .subtitle {
     width: 90%;
-    margin: 2em 5% 1em;
+    margin: 1em 5% 1em;
   }
 
   .subtitle-index {
-    margin: 1em 5%;
+    margin: 2em 5% 1em;
   }
 
   .subtitle:hover {
-    animation: subtitle 0.2s linear normal;
+    animation: subtitle 0.3s linear normal;
   }
 
   @keyframes subtitle {
     0% {
-      transform: translateX(0.1em);
+      transform: translateX(0.2em);
+      box-shadow: -0.2em 0 0 0 #000;
+      background-position-x: -0.2em;
     }
 
     25% {
-      transform: translateX(-0.1em);
+      transform: translateX(-0.2em);
+      box-shadow: 0.2em 0 0 0 #000;
+      background-position-x: 0.2em;
     }
 
     50% {
-      transform: translateX(0.1em);
+      transform: translateX(0.2em);
+      box-shadow: -0.2em 0 0 0 #000;
+      background-position-x: -0.2em;
     }
 
     75% {
-      transform: translateX(-0.1em);
+      transform: translateX(-0.2em);
+      box-shadow: 0.2em 0 0 0 #000;
+      background-position-x: 0.2em;
     }
 
     100% {
       transform: translateX(0);
+      box-shadow: 0 0 0 0 #000;
+      background-position-x: 0em;
     }
   }
 
@@ -716,7 +738,7 @@ td {
 
   .info-container {
     width: 40%;
-    margin: 2em 0;
+    margin: 2em 1em;
   }
 
   .info-container:hover .img-info {
@@ -742,10 +764,48 @@ td {
 
   .table {
     width: 60%;
-    margin: 0 20%;
+    margin: 1em 20%;
   }
 
   /*about-us*/
+
+  .bacchus-container {
+    position: relative;
+  }
+
+  .bacchus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    font-size: 0.5em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 50%;
+    transition: all 0.2s;
+    transform: translate(10em, 10em);
+    z-index: -1;
+    filter: opacity(0);
+  }
+
+  .bacchus::before {
+    content: "";
+    width: 20%;
+    height: 60%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1em;
+    right: 0;
+    z-index: -1;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(110deg);
+  }
+
+  .bacchus-container:hover .bacchus {
+    font-size: 2em;
+    transform: translate(-7em, -1em);
+    filter: opacity(1);
+  }
 
   .about-us {
     margin: 2em 20%;
@@ -757,7 +817,7 @@ td {
   }
 
   .video-text {
-    margin: -1em 5% 5em;
+    margin: -1em 5% 1em;
     padding: 2em 2em 1em;
   }
 
@@ -778,14 +838,14 @@ td {
 
   .map {
     width: 90%;
-    margin: 0 5%;
+    margin: 1em 5%;
   }
 
   /*form*/
 
   .form {
     width: 60%;
-    margin: 2em 20%;
+    margin: 1em 20%;
   }
 
   .name-box {
