@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: #0005;
+  color: #fff;
+}
+
 .body {
   font-size: 10px;
   background-color: #f9e4d4;
@@ -51,11 +56,6 @@
 
 .decoration {
   text-decoration: none;
-}
-
-*::selection {
-  background-color: #0005;
-  color: #fff;
 }
 
 /*header*/
@@ -304,7 +304,6 @@ ul li a {
 
 .carousel-btn {
   background-color: #9c0f48;
-  border-radius: 1em;
 }
 
 .menu-circle {
