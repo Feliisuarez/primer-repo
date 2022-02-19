@@ -125,6 +125,10 @@
       <h2 class="subtitle font-lobster">Ubicacion</h2>
       <section>
         <article class="map-container">
+          <input type="checkbox" id="map-btn" class="map-checkbox" />
+          <label class="map-btn borders" for="map-btn">
+            <i class="bx bx-map-alt bx-lg"></i
+          ></label>
           <ul class="ubication-box">
             <li class="ubication-item">Pais</li>
             <li class="ubication-item">Provincia</li>
@@ -132,10 +136,8 @@
             <li class="ubication-item">Calle</li>
           </ul>
           <img class="map img-map" src="../assets/imgs/local.jpg" alt="local" />
-        </article>
-        <article>
           <iframe
-            class="map"
+            class="google-map map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.629015643426!2d-58.436933072521974!3d-34.       587538124532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8a347bb55df550c!2sCoderhouse!5e0!3m2!1ses!2sar!4v1642120823834!5m2!1ses!2sar"
             width="600"
             height="450"
