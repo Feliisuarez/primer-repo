@@ -133,10 +133,18 @@
   text-align: center;
   margin: 2em 0;
   padding: 0.1em 0;
+  position: relative;
 }
 
 .menu-burger-link {
   font-size: 1.5em;
+  color: #d67d3e;
+}
+
+.burger-link-icon {
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
   color: #d67d3e;
 }
 
@@ -512,7 +520,7 @@ td::after {
   z-index: 50;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
-  transition: filter 1s;
+  transition: background-color 1s;
 }
 
 .map-container {
@@ -525,12 +533,11 @@ td::after {
 
 .img-map {
   object-fit: cover;
-  transition: filter 1s;
 }
 
 .map {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   margin: 0;
 }
 
@@ -550,25 +557,23 @@ td::after {
   background-color: #000;
   color: #fff;
   position: absolute;
+  top: 8em;
   left: 0;
-  bottom: 0;
   z-index: 50;
   transition: background-color 1s;
 }
 
 .map-btn:active {
   width: 5.8em;
-  height: 5.8em;
   left: 0.1em;
-  bottom: 0.1em;
 }
 
 .map-checkbox {
   display: none;
 }
 
-.map-checkbox:checked ~ .img-map {
-  filter: opacity(0);
+.map-checkbox:checked ~ .google-map {
+  z-index: unset;
 }
 
 .map-checkbox:checked ~ .map-btn,
@@ -941,7 +946,7 @@ td::after {
     margin: 0;
     flex-direction: column;
     justify-content: unset;
-    top: 5em;
+    top: 6em;
     left: 1em;
     font-size: 2em;
     text-align: right;
