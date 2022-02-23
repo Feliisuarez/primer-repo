@@ -1,0 +1,36 @@
+/*products*/
+
+.table {
+  width: 100%;
+  font-size: 1.5em;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  margin: 1em 0;
+}
+
+td {
+  border: 1px solid #ddd;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 1%;
+    height: 90%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    animation: td 2s linear normal;
+  }
+}
+
+@keyframes td {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 1%;
+  }
+}

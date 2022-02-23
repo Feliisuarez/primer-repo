@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+@import "index";
+@import "products";
+@import "about-us";
+@import "ubication";
+@import "form";
+@import "medias";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  &::selection {
+    background-color: $title-color;
+    color: #fff;
+  }
+}
+
+.body {
+  font-size: 10px;
+  background-color: $bg-color;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+  grid-template-rows: auto auto auto auto;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/*modifiers*/
+
+.borders {
+  border-radius: 1em;
+}
+
+.font-lobster {
+  font-family: "Lobster", cursive;
+  font-weight: 200;
+}
+
+.font-cursive {
+  font-family: cursive;
+}
+
+.decoration {
+  text-decoration: none;
+}

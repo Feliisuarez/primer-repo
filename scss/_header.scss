@@ -1,0 +1,185 @@
+/*header*/
+
+.header-title {
+  height: 13vh;
+  background-color: $primary-color;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo-link {
+  display: block;
+}
+
+.logo {
+  position: fixed;
+  top: 2vh;
+  left: 0.5em;
+  width: 5em;
+  height: 9vh;
+  object-fit: cover;
+  filter: drop-shadow(-0.5em 0.5em 0.1em #000);
+  transition: all 0.2s;
+  z-index: 300;
+}
+
+.title {
+  font-size: 4em;
+  color: $title-color;
+  text-shadow: 0 0.2em 0.1em #000;
+  animation: title 0.5s linear normal;
+}
+
+@keyframes title {
+  0% {
+    text-shadow: 0 0em 0em #000;
+    transform: translateY(0.2em);
+  }
+
+  100% {
+    text-shadow: 0 0.2em 0.1em #000;
+    transform: translateY(0);
+  }
+}
+
+.menu-icon {
+  color: #fff;
+  background-color: #000;
+  position: fixed;
+  right: 0;
+  height: 12vh;
+  z-index: 300;
+}
+
+.dropdown {
+  display: inline;
+}
+
+.menu-burger {
+  background-color: $bg-color;
+  box-shadow: -0.1em 0.5em 1em #000a;
+  z-index: 90;
+  width: 50vw;
+  height: 100vh;
+}
+
+.menu-burger-box {
+  background-color: #0002;
+  text-align: center;
+  margin: 2em 0;
+  padding: 0.1em 0;
+  position: relative;
+}
+
+.menu-burger-link {
+  font-size: 1.5em;
+  color: $secondary-color;
+}
+
+.burger-link-icon {
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  color: $secondary-color;
+}
+
+.social-icon {
+  display: inline-block;
+  color: #000;
+  margin: 0 0.3em;
+  text-shadow: 0 -1em 1em transparent;
+  transition: all 0.2s;
+}
+
+.social-icons {
+  margin: 15vh 0 0 0;
+}
+
+ul {
+  li {
+    list-style: none;
+    a {
+      color: $secondary-color;
+    }
+  }
+}
+
+.nav {
+  position: sticky;
+  top: -19vh;
+  z-index: 150;
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+  height: 10vh;
+  position: relative;
+  right: 1.5em;
+}
+
+.home {
+  border-bottom-left-radius: 10em;
+  border-top-left-radius: 10em;
+}
+
+.contact {
+  border-bottom-right-radius: 10em;
+  border-top-right-radius: 10em;
+}
+
+.home-icon {
+  margin-left: 0.2em;
+}
+
+.menu-link {
+  padding: 0.5em 2em;
+  display: block;
+  transition: all 0.3s;
+}
+
+.list-item {
+  width: 12%;
+  text-align: center;
+  font-size: 2em;
+  background-color: #0003;
+  border: 1px solid $secondary-color;
+  box-shadow: 0em 0.3em 0.1em $primary-color;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.icon-link {
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  color: $secondary-color;
+  pointer-events: none;
+}
+
+.button-on {
+  animation: on-button 0.2s linear normal;
+  box-shadow: 0 0 0 $primary-color;
+  transform: translateY(0.3em);
+}
+
+@keyframes on-button {
+  from {
+    box-shadow: 0 0.3em 0.1em $primary-color;
+    transform: translateY(0em);
+  }
+
+  to {
+    box-shadow: 0 0 0 $primary-color;
+    transform: translateY(0.3em);
+  }
+}

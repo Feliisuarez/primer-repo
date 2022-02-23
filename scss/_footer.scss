@@ -1,0 +1,41 @@
+/*Footer*/
+
+.footer {
+  margin-top: 1rem;
+  background-color: $primary-color;
+}
+
+.footer-box-flex {
+  padding: 3em 2em 1em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3em;
+  margin: 0 1.5em;
+}
+
+.footer-info {
+  margin: 0.5em 0;
+  font-size: 1.3em;
+}
+
+.hr {
+  width: 80%;
+  margin: 0 10%;
+  color: #fff;
+}
+
+.copyright {
+  color: #fffa;
+  text-align: center;
+  padding: 1em;
+  background-color: #0003;
+  margin: 0;
+}
