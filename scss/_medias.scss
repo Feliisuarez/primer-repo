@@ -90,6 +90,10 @@
     width: 90%;
     margin: 1em 5% 1em;
 
+    &-index {
+      margin: 2em 5% 1em;
+    }
+
     &:hover {
       animation: subtitle 0.3s linear normal;
     }
@@ -125,10 +129,6 @@
       box-shadow: 0 0 0 0 #000;
       background-position-x: 0em;
     }
-  }
-
-  .subtitle-index {
-    margin: 2em 5% 1em;
   }
 
   /*footer*/
@@ -269,11 +269,11 @@
   .video {
     width: 90%;
     margin: 0 5%;
-  }
 
-  .video-text {
-    margin: -1em 5% 1em;
-    padding: 2em 2em 1em;
+    &-text {
+      margin: -1em 5% 1em;
+      padding: 2em 2em 1em;
+    }
   }
 
   /*ubication*/

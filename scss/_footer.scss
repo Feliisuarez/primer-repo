@@ -3,27 +3,27 @@
 .footer {
   margin-top: 1rem;
   background-color: $primary-color;
-}
 
-.footer-box-flex {
-  padding: 3em 2em 1em 2em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
+  &-box-flex {
+    padding: 3em 2em 1em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-.footer-box {
-  color: #fff;
-  display: inline-block;
-  font-size: 1.3em;
-  margin: 0 1.5em;
-}
+  &-box {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0 1.5em;
+  }
 
-.footer-info {
-  margin: 0.5em 0;
-  font-size: 1.3em;
+  &-info {
+    margin: 0.5em 0;
+    font-size: 1.3em;
+  }
 }
 
 .hr {

@@ -23,14 +23,14 @@
   width: 100%;
   height: 80vh;
   margin: 0;
-}
 
-.video-text {
-  font-size: 1.5em;
-  margin: -1em 0 1em;
-  padding: 2em 0 1em;
-  line-height: 1.5;
-  color: #000;
-  border: 2px solid #000;
-  background-color: #0002;
+  &-text {
+    font-size: 1.5em;
+    margin: -1em 0 1em;
+    padding: 2em 0 1em;
+    line-height: 1.5;
+    color: #000;
+    border: 2px solid #000;
+    background-color: #0002;
+  }
 }

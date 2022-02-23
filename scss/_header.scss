@@ -12,22 +12,6 @@
   z-index: 100;
 }
 
-.logo-link {
-  display: block;
-}
-
-.logo {
-  position: fixed;
-  top: 2vh;
-  left: 0.5em;
-  width: 5em;
-  height: 9vh;
-  object-fit: cover;
-  filter: drop-shadow(-0.5em 0.5em 0.1em #000);
-  transition: all 0.2s;
-  z-index: 300;
-}
-
 .title {
   font-size: 4em;
   color: $title-color;
@@ -45,6 +29,22 @@
     text-shadow: 0 0.2em 0.1em #000;
     transform: translateY(0);
   }
+}
+
+.logo-link {
+  display: block;
+}
+
+.logo {
+  position: fixed;
+  top: 2vh;
+  left: 0.5em;
+  width: 5em;
+  height: 9vh;
+  object-fit: cover;
+  filter: drop-shadow(-0.5em 0.5em 0.1em #000);
+  transition: all 0.2s;
+  z-index: 300;
 }
 
 .menu-icon {
@@ -66,19 +66,19 @@
   z-index: 90;
   width: 50vw;
   height: 100vh;
-}
 
-.menu-burger-box {
-  background-color: #0002;
-  text-align: center;
-  margin: 2em 0;
-  padding: 0.1em 0;
-  position: relative;
-}
+  &-box {
+    background-color: #0002;
+    text-align: center;
+    margin: 2em 0;
+    padding: 0.1em 0;
+    position: relative;
+  }
 
-.menu-burger-link {
-  font-size: 1.5em;
-  color: $secondary-color;
+  &-link {
+    font-size: 1.5em;
+    color: $secondary-color;
+  }
 }
 
 .burger-link-icon {
@@ -98,15 +98,6 @@
 
 .social-icons {
   margin: 15vh 0 0 0;
-}
-
-ul {
-  li {
-    list-style: none;
-    a {
-      color: $secondary-color;
-    }
-  }
 }
 
 .nav {

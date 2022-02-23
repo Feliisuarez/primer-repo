@@ -49,6 +49,15 @@
   grid-area: footer;
 }
 
+ul {
+  li {
+    list-style: none;
+    a {
+      color: $secondary-color;
+    }
+  }
+}
+
 /*modifiers*/
 
 .borders {
