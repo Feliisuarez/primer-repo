@@ -16,6 +16,13 @@
 
   .header-title {
     justify-content: left;
+
+    &::before {
+      animation: wave-b 10s linear alternate infinite;
+    }
+    &::after {
+      animation: wave-a 15s linear alternate infinite;
+    }
   }
 
   .logo {
@@ -85,6 +92,15 @@
   }
 
   /*main*/
+
+  .main {
+    &::before {
+      animation: wave-b 10s linear alternate infinite;
+    }
+    &::after {
+      animation: wave-a 15s linear alternate infinite;
+    }
+  }
 
   .subtitle {
     width: 90%;

@@ -3,7 +3,7 @@
 .header-title {
   height: 13vh;
   background-color: #470d21;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   display: -webkit-box;
@@ -16,6 +16,76 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+}
+
+.header-title::before, .header-title::after {
+  content: "";
+  width: 100%;
+  height: 6.5vh;
+  position: absolute;
+  background-image: url(../assets/svgs/wave-up.svg);
+}
+
+.header-title::before {
+  left: -50%;
+  bottom: -7vh;
+  -webkit-animation: wave-b 5s linear alternate infinite;
+          animation: wave-b 5s linear alternate infinite;
+  -webkit-filter: drop-shadow(0 0.3em 0 #9c0f48);
+          filter: drop-shadow(0 0.3em 0 #9c0f48);
+}
+
+.header-title::after {
+  left: 0;
+  bottom: -6vh;
+  -webkit-animation: wave-a 10s linear alternate infinite;
+          animation: wave-a 10s linear alternate infinite;
+  -webkit-filter: drop-shadow(0 0.3em 0 #9c0f48);
+          filter: drop-shadow(0 0.3em 0 #9c0f48);
+}
+
+@-webkit-keyframes wave-b {
+  0% {
+    -webkit-transform: translateX(0) scale(3, 1);
+            transform: translateX(0) scale(3, 1);
+  }
+  100% {
+    -webkit-transform: translateX(100%) scale(3, 1);
+            transform: translateX(100%) scale(3, 1);
+  }
+}
+
+@keyframes wave-b {
+  0% {
+    -webkit-transform: translateX(0) scale(3, 1);
+            transform: translateX(0) scale(3, 1);
+  }
+  100% {
+    -webkit-transform: translateX(100%) scale(3, 1);
+            transform: translateX(100%) scale(3, 1);
+  }
+}
+
+@-webkit-keyframes wave-a {
+  0% {
+    -webkit-transform: translateX(0) scale(3, 1);
+            transform: translateX(0) scale(3, 1);
+  }
+  100% {
+    -webkit-transform: translateX(100%) scale(3, 1);
+            transform: translateX(100%) scale(3, 1);
+  }
+}
+
+@keyframes wave-a {
+  0% {
+    -webkit-transform: translateX(0) scale(3, 1);
+            transform: translateX(0) scale(3, 1);
+  }
+  100% {
+    -webkit-transform: translateX(100%) scale(3, 1);
+            transform: translateX(100%) scale(3, 1);
+  }
 }
 
 .title {
@@ -71,6 +141,7 @@
   z-index: 300;
 }
 
+/*menu mobile*/
 .menu-icon {
   color: #fff;
   background-color: #000;
@@ -113,6 +184,7 @@
   color: #d67d3e;
 }
 
+/*social*/
 .social-icon {
   display: inline-block;
   color: #000;
@@ -123,9 +195,10 @@
 }
 
 .social-icons {
-  margin: 15vh 0 0 0;
+  margin: 17vh 0 0 0;
 }
 
+/*menu desktop*/
 .nav {
   position: -webkit-sticky;
   position: sticky;
@@ -236,6 +309,37 @@
 }
 
 /*Main*/
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.main::before, .main::after {
+  content: "";
+  width: 100%;
+  height: 6.5vh;
+  position: absolute;
+  background-image: url(../assets/svgs/wave-down.svg);
+}
+
+.main::before {
+  bottom: 1vh;
+  left: -50%;
+  -webkit-animation: wave-b 5s linear alternate infinite;
+          animation: wave-b 5s linear alternate infinite;
+  -webkit-filter: drop-shadow(0 -0.3em 0 #9c0f48);
+          filter: drop-shadow(0 -0.3em 0 #9c0f48);
+}
+
+.main::after {
+  bottom: -1px;
+  left: 0;
+  -webkit-animation: wave-a 10s linear alternate infinite;
+          animation: wave-a 10s linear alternate infinite;
+  -webkit-filter: drop-shadow(0 -0.3em 0 #9c0f48);
+          filter: drop-shadow(0 -0.3em 0 #9c0f48);
+}
+
 .subtitle {
   width: 100%;
   text-align: center;
@@ -251,7 +355,6 @@
   background-size: 10%;
   -webkit-box-shadow: 0 0 0 0 #000;
           box-shadow: 0 0 0 0 #000;
-  position: relative;
 }
 
 .subtitle-index {
@@ -260,12 +363,10 @@
 
 /*Footer*/
 .footer {
-  margin-top: 1rem;
   background-color: #470d21;
 }
 
 .footer-box-flex {
-  padding: 3em 2em 1em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,6 +907,14 @@ td::after {
         -ms-flex-pack: left;
             justify-content: left;
   }
+  .header-title::before {
+    -webkit-animation: wave-b 10s linear alternate infinite;
+            animation: wave-b 10s linear alternate infinite;
+  }
+  .header-title::after {
+    -webkit-animation: wave-a 15s linear alternate infinite;
+            animation: wave-a 15s linear alternate infinite;
+  }
   .logo {
     margin: 0 1em;
   }
@@ -860,6 +969,14 @@ td::after {
     text-shadow: 0 0.1em 0.1em #470d21;
   }
   /*main*/
+  .main::before {
+    -webkit-animation: wave-b 10s linear alternate infinite;
+            animation: wave-b 10s linear alternate infinite;
+  }
+  .main::after {
+    -webkit-animation: wave-a 15s linear alternate infinite;
+            animation: wave-a 15s linear alternate infinite;
+  }
   .subtitle {
     width: 90%;
     margin: 1em 5% 1em;
@@ -1219,5 +1336,9 @@ ul li a {
 
 .decoration {
   text-decoration: none;
+}
+
+.margin {
+  margin-bottom: 4rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -3,13 +3,56 @@
 .header-title {
   height: 13vh;
   background-color: $primary-color;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 6.5vh;
+    position: absolute;
+    background-image: url(../assets/svgs/wave-up.svg);
+  }
+
+  &::before {
+    left: -50%;
+    bottom: -7vh;
+    animation: wave-b 5s linear alternate infinite;
+    filter: drop-shadow(0 0.3em 0 $title-color);
+  }
+
+  &::after {
+    left: 0;
+    bottom: -6vh;
+    animation: wave-a 10s linear alternate infinite;
+    filter: drop-shadow(0 0.3em 0 $title-color);
+  }
+}
+
+@keyframes wave-b {
+  0% {
+    transform: translateX(0) scale(3, 1);
+  }
+
+  100% {
+    transform: translateX(100%) scale(3, 1);
+  }
+}
+
+@keyframes wave-a {
+  0% {
+    transform: translateX(0) scale(3, 1);
+  }
+
+  100% {
+    transform: translateX(100%) scale(3, 1);
+  }
 }
 
 .title {
@@ -46,6 +89,8 @@
   transition: all 0.2s;
   z-index: 300;
 }
+
+/*menu mobile*/
 
 .menu-icon {
   color: #fff;
@@ -88,6 +133,8 @@
   color: $secondary-color;
 }
 
+/*social*/
+
 .social-icon {
   display: inline-block;
   color: #000;
@@ -97,8 +144,10 @@
 }
 
 .social-icons {
-  margin: 15vh 0 0 0;
+  margin: 17vh 0 0 0;
 }
+
+/*menu desktop*/
 
 .nav {
   position: sticky;

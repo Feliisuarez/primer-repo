@@ -1,5 +1,33 @@
 /*Main*/
 
+.main {
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 6.5vh;
+    position: absolute;
+    background-image: url(../assets/svgs/wave-down.svg);
+  }
+
+  &::before {
+    bottom: 1vh;
+    left: -50%;
+    animation: wave-b 5s linear alternate infinite;
+    filter: drop-shadow(0 -0.3em 0 $title-color);
+  }
+
+  &::after {
+    bottom: -1px;
+    left: 0;
+    animation: wave-a 10s linear alternate infinite;
+    filter: drop-shadow(0 -0.3em 0 $title-color);
+  }
+}
+
 .subtitle {
   width: 100%;
   text-align: center;
@@ -14,7 +42,6 @@
   background-attachment: fixed;
   background-size: 10%;
   box-shadow: 0 0 0 0 #000;
-  position: relative;
 
   &-index {
     margin: 2em 0 1em;
