@@ -30,7 +30,7 @@
   &::after {
     left: 0;
     bottom: -6vh;
-    animation: wave-a 10s linear alternate infinite;
+    animation: wave-a 5s linear alternate infinite;
     filter: drop-shadow(0 0.3em 0 $title-color);
   }
 }
