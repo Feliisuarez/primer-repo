@@ -52,7 +52,6 @@
 }
 
 .button {
-  padding: 0.5em 1em;
   margin: 0 1em;
   background-color: $primary-color;
   color: $secondary-color;
@@ -69,8 +68,14 @@
   }
 }
 
+.reset-btn {
+  @extend .button;
+  padding: 0.5em 1em;
+}
+
 .submit-btn {
-  padding: 0 3em;
+  @extend .button;
+  padding: 0.5em 3em;
 }
 
 .input,

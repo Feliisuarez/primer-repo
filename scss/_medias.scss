@@ -265,11 +265,10 @@
     filter: opacity(0);
 
     &::before {
-      content: "";
+      @include pseudo-element;
       width: 20%;
       height: 60%;
       background-color: #fff;
-      position: absolute;
       bottom: -1em;
       right: 0;
       z-index: -1;

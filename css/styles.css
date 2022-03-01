@@ -20,9 +20,9 @@
 
 .header-title::before, .header-title::after {
   content: "";
+  position: absolute;
   width: 100%;
   height: 6.5vh;
-  position: absolute;
   background-image: url(../assets/svgs/wave-up.svg);
 }
 
@@ -320,9 +320,9 @@
 
 .main::before, .main::after {
   content: "";
+  position: absolute;
   width: 100%;
   height: 6.5vh;
-  position: absolute;
   background-image: url(../assets/svgs/wave-down.svg);
 }
 
@@ -1041,8 +1041,7 @@ tr:nth-child(19) ::after {
   margin: 1em 0;
 }
 
-.button {
-  padding: 0.5em 1em;
+.button, .reset-btn, .submit-btn {
   margin: 0 1em;
   background-color: #470d21;
   color: #d67d3e;
@@ -1053,7 +1052,7 @@ tr:nth-child(19) ::after {
           box-shadow: inset 0 0 0.5em #d67d3e;
 }
 
-.button:active {
+.button:active, .reset-btn:active, .submit-btn:active {
   background-color: #d67d3e;
   color: #470d21;
   border: 2px solid #470d21;
@@ -1061,8 +1060,12 @@ tr:nth-child(19) ::after {
           box-shadow: inset 0 0 0.5em #470d21;
 }
 
+.reset-btn {
+  padding: 0.5em 1em;
+}
+
 .submit-btn {
-  padding: 0 3em;
+  padding: 0.5em 3em;
 }
 
 .input,
@@ -1392,10 +1395,10 @@ tr:nth-child(19) ::after {
   }
   .bacchus::before {
     content: "";
+    position: absolute;
     width: 20%;
     height: 60%;
     background-color: #fff;
-    position: absolute;
     bottom: -1em;
     right: 0;
     z-index: -1;
