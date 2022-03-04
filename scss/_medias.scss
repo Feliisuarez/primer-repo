@@ -1,7 +1,19 @@
 @media screen and (max-width: 300px) {
+  /*header*/
+  .menu-icon {
+    width: 4.5em;
+  }
+
+  .menu-burger-box {
+    text-align: right;
+  }
+  /*ubication*/
   .ubication-box {
-    width: 100%;
-    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .map-btn {
+    top: 10em;
   }
 }
 
@@ -117,46 +129,23 @@
 
   @keyframes subtitle {
     0% {
-      transform: translateX(0.2em);
-      box-shadow: -0.2em 0 0 0 #000;
       background-position-x: -0.2em;
     }
 
     25% {
-      transform: translateX(-0.2em);
-      box-shadow: 0.2em 0 0 0 #000;
       background-position-x: 0.2em;
     }
 
     50% {
-      transform: translateX(0.2em);
-      box-shadow: -0.2em 0 0 0 #000;
       background-position-x: -0.2em;
     }
 
     75% {
-      transform: translateX(-0.2em);
-      box-shadow: 0.2em 0 0 0 #000;
       background-position-x: 0.2em;
     }
 
     100% {
-      transform: translateX(0);
-      box-shadow: 0 0 0 0 #000;
       background-position-x: 0em;
-    }
-  }
-
-  /*footer*/
-
-  ul {
-    li {
-      a {
-        &:hover {
-          color: #fff;
-          text-shadow: 0 0 1em #fff;
-        }
-      }
     }
   }
 
@@ -211,7 +200,7 @@
     margin: 2em 1em;
 
     &:hover .img-info {
-      transform: translateY(0);
+      transform: translateY(1em);
     }
 
     &:hover .title-info {
@@ -297,13 +286,11 @@
     width: 6em;
     margin: 0;
     flex-direction: column;
-    justify-content: unset;
     top: 6em;
     left: 1em;
     font-size: 2em;
-    text-align: right;
     border-top-left-radius: 1em;
-    border-bottom-right-radius: unset;
+    border-bottom-left-radius: 1em;
   }
 
   .map {

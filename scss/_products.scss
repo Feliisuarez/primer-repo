@@ -36,7 +36,7 @@ td {
 
 @for $i from 1 through 19 {
   tr:nth-child(#{$i}) &::after {
-    animation: td 1s linear normal;
+    animation: td 0.1s linear normal;
     animation-delay: $i * 0.1s;
     animation-fill-mode: forwards;
   }
