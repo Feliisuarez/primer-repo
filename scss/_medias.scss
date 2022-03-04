@@ -226,6 +226,13 @@
     margin: 1em 20%;
   }
 
+  .button-img {
+    &:hover {
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+
   /*about-us*/
 
   .bacchus-container {
