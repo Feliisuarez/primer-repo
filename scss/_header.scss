@@ -111,6 +111,10 @@
   width: 50vw;
   height: 100vh;
 
+  & :first-child {
+    margin-top: 4em;
+  }
+
   &-box {
     background-color: #0002;
     text-align: center;
@@ -127,7 +131,7 @@
 
 .burger-link-icon {
   position: absolute;
-  top: 0.1em;
+  top: -4em;
   left: 0.2em;
   color: $secondary-color;
 }

@@ -21,3 +21,8 @@ $bg-img: (
   content: "";
   position: absolute;
 }
+
+@mixin medium-size {
+  width: 80%;
+  margin: 1em 10%;
+}

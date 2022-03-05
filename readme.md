@@ -1,0 +1,1 @@
+Este proyecto está hecho para el curso de desarrollo web de CoderHouse. Es una página simple ya que está compuesta únicamente con html y css compilado con sass. Además tiene Bootstrap ya que es uno de los requerimientos del proyecto. Hay cosas que se podrían haber hecho con JavaScript pero para no usarlo me las ingenié en algunas ocasiones.

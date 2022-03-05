@@ -28,74 +28,76 @@
   }
 }
 
-#radio-1:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/60/thumb_59864_default_big.jpeg");
-}
+#radio- {
+  &1:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/60/thumb_59864_default_big.jpeg");
+  }
 
-#radio-2:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/53/thumb_52791_default_big.jpeg");
-}
+  &2:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/53/thumb_52791_default_big.jpeg");
+  }
 
-#radio-3:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/53/thumb_52733_default_small.jpeg");
-}
+  &3:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/53/thumb_52733_default_small.jpeg");
+  }
 
-#radio-4:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/55/thumb_54453_default_small.jpeg");
-}
+  &4:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/55/thumb_54453_default_small.jpeg");
+  }
 
-#radio-5:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/64/thumb_63753_default_small.jpeg");
-}
+  &5:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/64/thumb_63753_default_small.jpeg");
+  }
 
-#radio-6:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/63/thumb_62401_default_small.jpeg");
-}
+  &6:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/63/thumb_62401_default_small.jpeg");
+  }
 
-#radio-7:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/58/thumb_57913_default_small.jpeg");
-}
+  &7:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/58/thumb_57913_default_small.jpeg");
+  }
 
-#radio-8:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/54/thumb_53986_default_small.jpeg");
-}
+  &8:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/54/thumb_53986_default_small.jpeg");
+  }
 
-#radio-9:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/61/thumb_60817_default_small.jpeg");
-}
+  &9:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/61/thumb_60817_default_small.jpeg");
+  }
 
-#radio-10:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/55/thumb_54326_default_small.jpeg");
-}
+  &10:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/55/thumb_54326_default_small.jpeg");
+  }
 
-#radio-11:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/57/thumb_56358_default_small.jpeg");
-}
+  &11:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/57/thumb_56358_default_small.jpeg");
+  }
 
-#radio-12:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/64/thumb_63273_default_small.jpeg");
-}
+  &12:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/64/thumb_63273_default_small.jpeg");
+  }
 
-#radio-13:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/65/thumb_64003_default_small.jpeg");
-}
+  &13:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/65/thumb_64003_default_small.jpeg");
+  }
 
-#radio-14:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/65/thumb_64021_default_small.jpeg");
-}
+  &14:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/65/thumb_64021_default_small.jpeg");
+  }
 
-#radio-15:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/64/thumb_63239_default_small.jpeg");
-}
+  &15:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/64/thumb_63239_default_small.jpeg");
+  }
 
-#radio-16:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/56/thumb_55623_default_small.jpeg");
-}
+  &16:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/56/thumb_55623_default_small.jpeg");
+  }
 
-#radio-17:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/61/thumb_60818_default_small.jpeg");
-}
+  &17:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/61/thumb_60818_default_small.jpeg");
+  }
 
-#radio-18:checked ~ .img-modal {
-  background-image: url("https://www.espaciovino.com.ar/media/default/0001/55/thumb_54824_default_small.jpeg");
+  &18:checked ~ .img-modal {
+    background-image: url("https://www.espaciovino.com.ar/media/default/0001/55/thumb_54824_default_small.jpeg");
+  }
 }
