@@ -1,5 +1,6 @@
 /*imports*/
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 /*header*/
 .header-title {
   height: 13vh;
@@ -883,6 +884,7 @@ tr:nth-child(19) ::after {
 }
 
 .video-text {
+  text-align: center;
   font-size: 1.5em;
   margin: -1em 0 1em;
   padding: 2em 0 1em;
@@ -1671,7 +1673,8 @@ ul li a:hover {
 }
 
 .font-cursive {
-  font-family: cursive;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
 }
 
 .decoration {
